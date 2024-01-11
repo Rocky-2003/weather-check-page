@@ -48,10 +48,14 @@ async function checkWeather(inputValue) {
   }
 }
 
+const newfunc = function () {
+  console.log("this is the new branh of the project");
+};
+
 // EVENT HANDLER TO CHECK THE CITY TEMPERATURE WHEN CLICK HAPPEN ON SEARCH BUTTON
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   checkWeather(input.value);
 });
 
-console.log("Rocky mor");
+newfunc();
