@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/csytle/syle.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="search-container">
+      <form class="search">
+        <input type="text" placeholder="Search..." class="input" />
+        <button class="btn"><i class="fas fa-search i-tag"></i></button>
+      </form>
+      <p class="invalid hideAndSeek">Invalid city name</p>
+      <div class="temp-info hideAndSeek">
+        <div class="temp">
+          <img id="allImages" class="Clear" src="src/img/Clear.png" alt="" />
+          <img id="allImages" class="Clouds" src="src/img/Clouds.png" alt="" />
+          <img
+            id="allImages"
+            class="Drizzle"
+            src="src/img/Drizzle.png"
+            alt=""
+          />
+          <img id="allImages" class="Mist" src="src/img/Mist.png" alt="" />
+          <img id="allImages" class="Rain" src="src/img/Rain.png" alt="" />
+          <img id="allImages" class="Snow" src="src/img/Snow.png" alt="" />
+
+          <!-- <img src="src/img/Clear.png" alt="" /> -->
+          <h1>23°C</h1>
+          <p><strong class="city">Hisar</strong></p>
+        </div>
+        <div class="temp-hum-wind">
+          <div class="display">
+            <img class="img-humi" src="src/img/humidity.png" alt="" />
+            <div>
+              <h2 class="humidity">24%</h2>
+              <p><strong>Humidity</strong></p>
+            </div>
+          </div>
+          <div class="display">
+            <img class="img-wind" src="src/img/wind.png" alt="" />
+            <div>
+              <h2 class="wind">50km/h</h2>
+              <p><strong>Wind</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="src/js/script.js"></script>
+  </body>
+</html>
