@@ -53,5 +53,3 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   checkWeather(input.value);
 });
-
-console.log("Rocky mor");
